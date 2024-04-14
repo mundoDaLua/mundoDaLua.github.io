@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  mundo_da_lua_blog:
+    build: .
+    image: mundo-da-lua-blog
+    container_name: mundo-da-lua-blog
+    ports:
+      - "4321:4321"
