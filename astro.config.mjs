@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://opluan.github.io',
 	server: { host: true},
 	integrations: [
 		starlight({
