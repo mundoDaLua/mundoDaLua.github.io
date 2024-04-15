@@ -1,6 +1,5 @@
 ---
-title: Sobre
+title: Projetos
 description: None
 ---
 
-## Whoami

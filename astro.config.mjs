@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightBlog from 'starlight-blog'
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,17 +12,15 @@ export default defineConfig({
 			title: 'Mundo Da Lua',
 			pagination: false,
 			pagefind: false,
+			plugins: [starlightBlog()],
 			social: {
 				github: 'https://github.com/opluan',
+				linkedin: 'https://www.linkedin.com/in/opluan/',
 			},
 			sidebar: [
 				{
 					label: 'Sobre',
 					link: '/about/',
-				},
-				{
-					label: 'Posts',
-					autogenerate: { directory: 'posts' },
 				},
 				{
 					label: 'Projetos',
