@@ -1,9 +1,9 @@
 ---
-title: Fundamentos 1
+title: Fundamentos 1 - Algoritmos
 description: Material de estudo sobre fundamentos em JavaScript
 ---
 
-# Programação JavaScript - Fundamentos (Algoritmos)
+# Fundamentos (Algoritmos)
 
 ## Declaração de Variáveis
 
