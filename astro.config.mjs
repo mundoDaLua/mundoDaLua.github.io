@@ -19,12 +19,16 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Sobre',
-					link: '/about/',
+					label: 'Aulas',
+					autogenerate: { directory: 'lectures' },
 				},
 				{
 					label: 'Projetos',
 					autogenerate: { directory: 'projects' },
+				},
+				{
+					label: 'Sobre',
+					link: '/about/',
 				},
 			],
 		}),
