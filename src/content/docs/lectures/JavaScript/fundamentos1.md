@@ -7,30 +7,58 @@ description: Material de estudo sobre fundamentos em JavaScript
 
 ### Var
 
-- Variáveis declaradas com var têm escopo de função ou escopo global, dependendo de onde são declaradas.
+- Variáveis declaradas com `var` têm escopo de função ou escopo global, dependendo de onde são declaradas.
 - Elas podem ser redeclaradas e atualizadas dentro de seu escopo.
-- No entanto, devido às suas características de escopo não tão previsíveis, seu uso é desencorajado em favor das declarações let e const.
+- No entanto, devido às suas características de escopo não tão previsíveis (ver `hoisting`), seu uso é desencorajado em favor das declarações let e const.
 
 ### Let
 
-- Variáveis declaradas com let têm escopo de bloco, o que significa que elas são acessíveis apenas dentro do bloco em que foram declaradas, incluindo blocos de loops for, while, if, entre outros.
+- Variáveis declaradas com `let` têm escopo de bloco, o que significa que elas são acessíveis apenas dentro do bloco em que foram declaradas, incluindo blocos de loops `for`, `while`, `if`, entre outros.
 - Elas não podem ser redeclaradas dentro do mesmo escopo, mas podem ser atualizadas.
-- O uso de let é recomendado para variáveis que precisam ser modificadas ao longo do tempo e têm um escopo bem definido.
+- O uso de `let` é recomendado para variáveis que precisam ser modificadas ao longo do tempo e têm um escopo bem definido.
 
 ### Const
 
-- Variáveis declaradas com const são constantes e têm escopo de bloco, assim como as variáveis declaradas com let.
+- Variáveis declaradas com `const` são constantes e têm escopo de bloco, assim como as variáveis declaradas com `let`.
 - Elas não podem ser reatribuídas após a inicialização.
-- No entanto, se a variável for um objeto ou um array, suas propriedades ou elementos podem ser modificados.
-- O uso de const é recomendado para valores que não devem ser modificados após a inicialização.
+- No entanto, se a variável for um `objeto` ou um `array`, suas propriedades ou elementos podem ser modificados.
+- O uso de `const` é recomendado para valores que não devem ser modificados após a inicialização.
+
+## Tipos de dados
+
+<!-- TODO Melhorar essa parte-->
+
+### Primitivos
+
+- Textual: `String`
+- Numérico
+  - `Number`
+  - `BigInt`
+- Lógico: `Boolean`
+- Vazio/Nulo:
+  - `null`
+  - `undefined`
+
+### Não-primitivos
+
+- Objeto: `Object`
+- Lista: `array`
+
+## Declaração vs Inicialização
+
+<!-- TODO Melhorar essa parte-->
+
+## Escopo
+
+<!-- TODO Melhorar essa parte-->
 
 ## Estruturas Condicionais
 
 ### Teoria
 
 - Importância das estruturas condicionais em programação.
-- Tipos de estruturas condicionais (if, else if, else).
-- Discussão sobre operadores de comparação (==, ===, !==, etc.) e operadores lógicos (&&, ||, !).
+- Tipos de estruturas condicionais (`if`, `else if`, `else` e `switch-case`).
+- Discussão sobre operadores de comparação (`==`, `===`, `!==`, etc.) e operadores lógicos (`&&`, `||`, `!`).
 
 ### Exemplo
 
@@ -57,7 +85,7 @@ if (nota >= 90) {
 
 ### Teoria
 
-- Tipos de loops (for, while) e suas diferenças.
+- Tipos de loops (`for`, `while`, `for-in` e `forEach`) e suas diferenças.
 - Quando usar cada tipo de loop e suas vantagens/desvantagens.
 
 ### Exemplo
