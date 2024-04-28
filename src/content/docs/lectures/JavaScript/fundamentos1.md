@@ -11,11 +11,19 @@ description: Material de estudo sobre fundamentos em JavaScript
 - Elas podem ser redeclaradas e atualizadas dentro de seu escopo.
 - No entanto, devido às suas características de escopo não tão previsíveis (ver `hoisting`), seu uso é desencorajado em favor das declarações let e const.
 
+```javascrpt
+var nomeDaVariavel
+```
+
 ### Let
 
 - Variáveis declaradas com `let` têm escopo de bloco, o que significa que elas são acessíveis apenas dentro do bloco em que foram declaradas, incluindo blocos de loops `for`, `while`, `if`, entre outros.
 - Elas não podem ser redeclaradas dentro do mesmo escopo, mas podem ser atualizadas.
 - O uso de `let` é recomendado para variáveis que precisam ser modificadas ao longo do tempo e têm um escopo bem definido.
+
+```javascrpt
+let nomeDaVariavel
+```
 
 ### Const
 
@@ -23,6 +31,10 @@ description: Material de estudo sobre fundamentos em JavaScript
 - Elas não podem ser reatribuídas após a inicialização.
 - No entanto, se a variável for um `objeto` ou um `array`, suas propriedades ou elementos podem ser modificados.
 - O uso de `const` é recomendado para valores que não devem ser modificados após a inicialização.
+
+```javascrpt
+const nomeDaVariavel
+```
 
 ## Tipos de dados
 
