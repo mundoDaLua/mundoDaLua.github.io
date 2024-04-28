@@ -105,7 +105,7 @@ teste()  // Saída: To vivo!
 
 #### Arguments
 
-- Em JavaScript toda função tem um array internamente que carrega consigo todos os argumentos que forem passados durante a execussão, mesmo que nenhum parametro tenha sido nomeado na sua assinatura
+- Em JavaScript toda função tem um array interno que possui todos os argumentos que forem passados durante a sua execussão, mesmo que nenhum parametro tenha sido nomeado na sua assinatura.
 - Este array é chamado de `arguments`, caso nenhum parametro seja passado na execussão, ele fica vazio.
 
 ```javascript
@@ -225,6 +225,7 @@ const potencia = (a, b) => a ** b  // a**b será o retorno
 ```
 
 ```javascript
+// Nunca faça assim! Deixa o codigo extremamente confuso!
 const potencia = (a, b) =>
 a ** b  // este é o limite do bloco
 console.log("Não faço parte da função!")
@@ -270,6 +271,11 @@ lista.forEach((elemento) => console.log(elemento))
 
 ```javascript
 const souAnonima = () => console.log("Não tenho nome!")
+
+const tambemSouAnonima = function (param1, param2) {
+    console.log("Sou uma função, e é isso ai!)
+    return param1 + param2
+}
 ```
 
 > Nestas formas, a função nao tem nome, e é incorreto "dizer que o nome da função é o nome da variavel", mesmo que a variavel esteja recebendo a criação da função
