@@ -140,4 +140,4 @@ lista.forEach(percorrer)
 
 ## Referencias
 
-- [MDN Web Docs. JavaScript | MDN. Acesso em: 26/04/2024](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [MDN Web Docs. JavaScript | MDN. 2022. Acesso em: 26/04/2024](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)

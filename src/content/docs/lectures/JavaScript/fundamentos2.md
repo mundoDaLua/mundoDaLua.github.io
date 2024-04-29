@@ -328,5 +328,5 @@ Se o usuário inserir valores inválidos (por exemplo, quilômetros, litros ou p
 
 ## Referências
 
-- [Cod3r Cursos Online, Curso Web Moderno Completo com JavaScript + Projetos, Udemy Acesso em: 26/04/2024](https://www.udemy.com/course/curso-web/)
-- [MDN Web Docs. JavaScript | MDN. Acesso em: 26/04/2024](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Cod3r Cursos Online, Curso Web Moderno Completo com JavaScript + Projetos, Udemy. 2024. Acesso em: 26/04/2024](https://www.udemy.com/course/curso-web/)
+- [MDN Web Docs. JavaScript | MDN. 2022. Acesso em: 26/04/2024](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
