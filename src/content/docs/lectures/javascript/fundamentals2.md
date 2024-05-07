@@ -273,7 +273,7 @@ lista.forEach((elemento) => console.log(elemento))
 const souAnonima = () => console.log("Não tenho nome!")
 
 const tambemSouAnonima = function (param1, param2) {
-    console.log("Sou uma função, e é isso ai!)
+    console.log("Sou uma função, e é isso ai!")
     return param1 + param2
 }
 ```
