@@ -68,3 +68,12 @@ Para garantir a **segurança**, o *HTTP* pode ser estendido com protocolos adici
 ## Client-side vs Server-side
 
 ### Client-side
+
+### Server-side
+
+## Referencias
+
+- [MOZILLA DEVELOPER NETWORK. Como a Web funciona. MDN Web Docs, 2023. Acesso em: 05/05/2024.](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+- [MOZILLA DEVELOPER NETWORK. HTTP. MDN Web Docs, 2023. Acesso em: 05/05/2024.](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)
+- [W3Schools. What is HTTP?. Acessado em: 05/05/2024](https://www.w3schools.com/whatis/whatis_http.asp)
+- [AKEMI, A. HTTP: um guia completo sobre o que é e como funciona o protocolo da web. Alura. Acessado em: 05/05/2024](https://www.alura.com.br/artigos/http)
