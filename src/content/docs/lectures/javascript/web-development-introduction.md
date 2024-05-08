@@ -27,13 +27,13 @@ A `URL` (*Uniform Resource Locators* - Localizador Uniforme de Recursos) é o ex
 
 <!-- TODO Expandir mais sobre a anatomia da URL e adicionar a referencia aqui-->
 
-![Anatomia de uma URL](../../../../assets/img/web-dev/url-anatomy.png)
+![Anatomia de uma URL](../../../../assets/img/web-development-introduction/url-anatomy.png)
 
 Essas solicitações são então enviadas ao servidor por uma **API** (`Application Programming Interface` - Interface de Programação de Aplicativos). A *API* atua como um **intermediário** entre o cliente e o servidor. Ela interpreta a solicitação, realiza as operações necessárias, como acessar um banco de dados ou processar dados, e prepara uma resposta para enviar de volta ao cliente.
 
 > Uma *API* é tanto responsavel por trazer as informações ao **cliente**, quanto levar as solicitações ao **servidor**. Podendo ser a mesma *API*, ou *APIs* distintas em momentos distintos (Ver assincronicidade em requisição WEB)
 
-![Meme comparando fluxo de uma API com um restaurante](../../../../assets/img/web-dev/meme-api.jpeg)
+![Meme comparando fluxo de uma API com um restaurante](../../../../assets/img/web-development-introduction/meme-api.jpeg)
 
 <!-- TODO Criar conteudo sobre assincronicidade e adicionar a referencia aqui-->
 
@@ -51,7 +51,7 @@ Os **cabeçalhos** fornecem informações adicionais sobre a resposta, como o ti
 
 O **corpo da resposta** contém os dados solicitados pelo cliente, como o *HTML*, *CSS*, *JavaScrit*, imagens, videos, etc, de uma página da web, ou os resultados de uma consulta de banco de dados.
 
-![Esquema de uma requisição HTTP](../../../../assets/img/web-dev/http-schema.png)
+![Esquema de uma requisição HTTP](../../../../assets/img/web-development-introduction/http-schema.png)
 
 ### Independencia entre as Trocas de Mensagem
 
