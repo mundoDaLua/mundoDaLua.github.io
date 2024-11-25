@@ -12,7 +12,9 @@ export default defineConfig({
 			title: 'Mundo Da Lua',
 			pagination: false,
 			pagefind: false,
-			plugins: [starlightBlog()],
+			plugins: [
+				starlightBlog(),
+			],
 			social: {
 				github: 'https://github.com/opluan',
 				linkedin: 'https://www.linkedin.com/in/opluan/',
@@ -20,16 +22,19 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Aulas',
+					collapsed: true,
 					autogenerate: { directory: 'lectures' },
 				},
 				{
 					label: 'Projetos',
+					collapsed: true,
 					autogenerate: { directory: 'projects' },
+					
 				},
-				{
-					label: 'Sobre',
-					link: '/about/',
-				},
+				// {
+				// 	label: 'Sobre',
+				// 	link: '/about/',
+				// },
 			],
 		}),
 	],
