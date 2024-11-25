@@ -11,7 +11,7 @@ description: Material de estudo sobre fundamentos em JavaScript
 - Elas podem ser redeclaradas e atualizadas dentro de seu escopo.
 - No entanto, devido às suas características de escopo não tão previsíveis (ver `hoisting`), seu uso é desencorajado em favor das declarações let e const.
 
-```javascrpt
+```js
 var nomeDaVariavel
 ```
 
@@ -21,7 +21,7 @@ var nomeDaVariavel
 - Elas não podem ser redeclaradas dentro do mesmo escopo, mas podem ser atualizadas.
 - O uso de `let` é recomendado para variáveis que precisam ser modificadas ao longo do tempo e têm um escopo bem definido.
 
-```javascrpt
+```js
 let nomeDaVariavel
 ```
 
@@ -32,7 +32,7 @@ let nomeDaVariavel
 - No entanto, se a variável for um `objeto` ou um `array`, suas propriedades ou elementos podem ser modificados.
 - O uso de `const` é recomendado para valores que não devem ser modificados após a inicialização.
 
-```javascrpt
+```js
 const nomeDaVariavel
 ```
 
@@ -74,7 +74,7 @@ const nomeDaVariavel
 
 ### Exemplo
 
-```javascript
+```js
 let nota = 75;
 
 if (nota >= 90) {
@@ -102,7 +102,7 @@ if (nota >= 90) {
 
 ### Exemplo
 
-```javascript
+```js
 // Exemplo 1: Loop for para imprimir números de 1 a 5
 for (let i = 0; i < 5; i++) {
     console.log(i);

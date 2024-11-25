@@ -1,6 +1,7 @@
 ---
 title: Obtendo um site com HTTPS
 date: 2024-06-28
+# excerpt: A small excerpt of the blog post…
 ---
 
 ## O Problema
@@ -9,8 +10,9 @@ Como diz o ditado **"O Seguro morreu de velho, e o Desconfiado está vivo até h
 
 ## A Solução
 
-
-    Foi utilizado uma nomenclatura especial neste post, tudo que está entre ${} é necessário ser alterado para os valores corretamente antes da execução!
+:::note
+Foi utilizado uma nomenclatura especial neste post, tudo que está entre `${}` é necessário ser alterado para os valores corretamente antes da execução!
+:::
 
 Antes de mais nada, precisamos instalar o `certbot`, uma aplicação muito interessante que nos fornece gratuitamente um certificado `SSL`, com duração de 1 ano. Para instala-lo resolvi utilizar um docker ~~afinal não quero poluir meu ambiente com aplicações terceiras rsrsrs~~.
 
@@ -25,7 +27,7 @@ Com a execução do `certbot` algumas perguntas e passos são necessários para 
 
 Em meu ambiente, utilizo um `nginx`, então foi preciso adicionar a seguinte linha para completa configuração **antes** de concluir a configuração do `certbot`:
 
-```conf
+```txt
 location /.well-known/acme-challenge/${ID_INFORMADO_PELO_CERTBOT} {
     return 200 '${RESPOSTA_ESPERADA_PELO_CERTBOT}';
 }
@@ -42,7 +44,7 @@ cp /etc/letsencrypt/live/${DOMAIN_NAME}/privkey.pem /home/
 
 Estamos quase concluindo a configuração do nosso amado `HTTPS`, so precisamos transferir os certificados para o nosso `nginx` e adicionar as seguintes configurações no `default.conf` (aproveita e não esqueça de remover a `location` configurada anteriormente ~~só por garantia é limpeza de ambiente é claro rsrsrs~~)
 
-```conf
+```txt
 listen       443 ssl;
 listen  [::]:443 ssl;
 server_name  ${DOMAIN_NAME};

@@ -23,7 +23,7 @@ description: Material de estudo sobre fundamentos em JavaScript
 - São blocos de código reutilizáveis que, idealmente, realizam uma tarefa específica.
 - São fundamentais para organizar e modularizar o código, facilitando a manutenção e o desenvolvimento de aplicações mais complexas.
 
-```javascript
+```js
 // Função Tradicional (Declaração de Função)
 function fun1() { }
 
@@ -64,7 +64,7 @@ falar('Olá')('Mundo')
 - A forma mais básica de se criar uma função é a sua declaração direta
 - Isto é obtido utilizando a palavra-chave `function`, seguida pelo nome da função e uma lista de parâmetros entre parênteses
 
-```javascript
+```js
 function saudacao(nome) {
     return "Olá, " + nome + "!";
 }
@@ -75,7 +75,7 @@ function saudacao(nome) {
 - As funções são executadas somente quando são chamadas.
 - Para chamar uma função, basta utilizar o nome da função seguido pelos argumentos entre parênteses (se houver)
 
-```javascript
+```js
 function saudacao(nome) {
     return "Olá, " + nome + "!";
 }
@@ -87,7 +87,7 @@ console.log(mensagem); // Saída: Olá, João!
 - Ao se declarar uma função desta forma, a função fica disponível em todo o codigo
 - Por conta disto, é possível ser chamada antes mesmo de ser declarada e não somente após sua declaração, como ocorre em outras linguagens como python
 
-```javascript
+```js
 teste()  // Saída: To vivo!
 
 function teste() {
@@ -108,7 +108,7 @@ teste()  // Saída: To vivo!
 - Em JavaScript toda função tem um array interno que possui todos os argumentos que forem passados durante a sua execussão, mesmo que nenhum parametro tenha sido nomeado na sua assinatura.
 - Este array é chamado de `arguments`, caso nenhum parametro seja passado na execussão, ele fica vazio.
 
-```javascript
+```js
 function somar() {
     let soma = 0
 
@@ -129,7 +129,7 @@ console.log(somar(3, 4, 'ja deu'))
 - Funções podem ter valores padrão (`default`) para seus parametros
 - Em JavaScript, existem varias formas de se ter valores padrão
 
-```javascript
+```js
 function somar(a, b, c) {
     a = a || 0  // valor que veio do parametro ou ZERO, se nenhum for passado
     b = b || 0
@@ -141,7 +141,7 @@ function somar(a, b, c) {
 console.log(somar())
 ```
 
-```javascript
+```js
 function somar(a, b, c) {
     a = a != undefined ? a : 0  // verifica se o parametro a esta atribuido, ou seja, diferente de nulo ou undefined, se sim, ele recebe o valor de a, senao recebe o valor padrão ZERO
     b = 1 in arguments ? b : 0  // verifica se o array arguments possui o indice 1, se sim, ele recebe o valor de b, senão recebe o valor padrão ZERO
@@ -151,7 +151,7 @@ function somar(a, b, c) {
 }
 ```
 
-```javascript
+```js
 // Forma mais moderna e recomendada de se criar valores padrão
 function somar(a='a', b='b', c='c') {
     return a + b + c
@@ -166,7 +166,7 @@ console.log(somar())
 - Quando a execução de uma função encontra uma instrução return, ela é interrompida e o valor especificado é retornado.
 - Caso nenhum `return` seja definido, ele é automaticamente atribuido com `undefined`
 
-```javascript
+```js
 function soma(a, b) {
     console.log(`O valor de a é ${a}`)  // é executado
     return a + b;
@@ -191,7 +191,7 @@ console.log(resultado); // Saída: 8
 - A função em si é tida como uma [função anônima](#funções-anônimas)
 - São invocadas pelo nome da variavel, seguido dos parentes e parametros (caso existam)
 
-```javascript
+```js
 soma(2,3) // ERRO!
 
 const soma = function(a,b) {
@@ -220,11 +220,11 @@ soma(1,2)  // Saida: 3
 - Herdam o contexto geral de onde estão, tornando mais simples em casos mais avançados da linguagem
 - Não possuem o array de `arguments`!
 
-```javascript
+```js
 const potencia = (a, b) => a ** b  // a**b será o retorno
 ```
 
-```javascript
+```js
 // Nunca faça assim! Deixa o codigo extremamente confuso!
 const potencia = (a, b) =>
 a ** b  // este é o limite do bloco
@@ -232,7 +232,7 @@ console.log("Não faço parte da função!")
 console.log(potencia(3,3))  // Teste comentar este trecho, e verá que a linha anterior continuará aparecendo, mostrando que ele realmente não faz parte da função, uma vez que a função não foi invocada
 ```
 
-```javascript
+```js
 const potencia = (a, b) => {
     console.log("Estou dentro da função!")
     return a**b  // Teste remover a palavra return, e verá que o valor será undefined
@@ -245,7 +245,7 @@ console.log(potencia(3,3))  // Teste comentar e verá que nada vai aparecer, vis
 
 - Lembram do loop `forEach`? Olha como ele fica utilizando uma arrow function, viram como fica mais legivel?
 
-```javascript
+```js
 const lista = ['a', 'b', 'c']
 
 // Usando funções padrão
@@ -269,7 +269,7 @@ lista.forEach((elemento) => console.log(elemento))
 - Note que em ambos os casos, não foi dado um nome realmente para a função, mas sim atribuida a uma variavel!
 - A parte da função em si, presente após o simbolo da atribuição, não há nenhum nome identificador, fazendo com que esta identificação fique indiretamente relacionada a propria variavel.
 
-```javascript
+```js
 const souAnonima = () => console.log("Não tenho nome!")
 
 const tambemSouAnonima = function (param1, param2) {
